@@ -1,0 +1,251 @@
+
+* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+    
+  }
+
+html {
+    height: 100%;
+  }
+
+  
+body{
+    min-height: 100%;  
+    width: 95%;
+    margin: 10px auto;
+    background-color: #87805E;
+    grid-gap: 7px;
+    color: #EDDFB3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+}
+
+.cont-imagen{
+    max-width: 100%;
+    max-height:100% ;
+    display: flex;             /*Utilizada para centrar la imágen horizontalmente*/
+    justify-content: center;   /*Utilizada para centrar la imágen horizontalmente*/
+    align-items: center;
+    margin-top:60px;            /*Margen superior*/
+    margin-bottom:30px;         /*Margen inferior*/
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    }
+
+.imagen{
+    width: 150px;
+    height: 150px;        
+    border-radius: 50%;
+    margin: 10px auto;
+    border: solid #D8CCA3 5px;
+    }
+
+.nombre{
+
+    max-width: 100%;
+    max-height:100% ;
+    display: flex; 
+    justify-content: center;
+    margin-top:240px;
+    margin-bottom:10px;
+    /*margin: 10px, 0px, 50px, 30px;  (Arriba, derecha, abajo, izquierda)*/
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+
+   
+    }
+
+.menu{
+    margin-top:150px;
+    margin-bottom:90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Josefin Sans', sans-serif;        
+    border-top: 2px solid #D8CCA3;
+    border-bottom: 2px solid #D8CCA3;
+    display: flex;
+    justify-content: space-between;
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;     
+    align-items: center;
+      } 
+
+          
+.contacto          
+          {
+            margin-top:20px;
+            margin-bottom:20px;
+            border-top: 2px solid #D8CCA3;
+            /*border-bottom: 1px solid #000;*/
+            padding: 20px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            grid-row: 2 / 3;
+            grid-column: 2 / 4;
+          }
+          
+.info-adicional
+            {
+            margin-top:90px;
+            margin-bottom:40px;
+            border-top: 2px solid #D8CCA3;
+            border-bottom: 2px solid #D8CCA3;
+            grid-row: 2 / 3;
+            grid-column: 2 / 4;
+            }
+
+
+/*-------- Computadora ----------*/
+@media (min-width: 1024px) {
+  body {
+        width: 100%;
+       }
+  }          
+
+/*-------- Tablet ----------*/
+@media (min-width: 768px) and (max-width: 1023px){
+  body {
+        width: 80%;
+       }
+
+  .cont-imagen{
+        max-width: 100%;
+        max-height:100% ;
+        display: flex;             /*Utilizada para centrar la imágen horizontalmente*/
+        justify-content: center;   /*Utilizada para centrar la imágen horizontalmente*/
+        align-items: center;
+        margin-top:50px;            /*Margen superior*/
+        margin-bottom:25px;         /*Margen inferior*/
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        }
+  .imagen{
+          width: 120px;
+          height: 120px;        
+          border-radius: 50%;
+          margin: 10px auto;
+          border: solid #D8CCA3 4px;
+          }
+  .nombre{
+          max-width: 100%;
+          max-height:100% ;
+          display: flex; 
+          justify-content: center;
+          margin-top:240px;
+          margin-bottom:10px;
+          grid-row: 1 / 2;
+          grid-column: 2 / 4;
+          font-family: 'Dancing Script', cursive;
+          font-size: medium;
+          }
+  .menu{
+          margin-top:240px;
+          margin-bottom:5px;
+          font-family: 'Josefin Sans', sans-serif; 
+          font-size: medium;       
+          border-top: 2px solid #D8CCA3;
+          border-bottom: 2px solid #D8CCA3;
+          display: flex;
+          justify-content: space-between;
+          grid-row: 3 / 4;
+          grid-column: 1 / 5;     
+          align-items: center;  
+          }          
+    .contacto          
+          {
+          margin-top:20px;
+          margin-bottom:20px;
+          border-top: 2px solid #D8CCA3;
+          padding: 20px;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          grid-row: 2 / 3;
+          grid-column: 2 / 4;
+          }
+.info-adicional
+          {
+          margin-top:90px;
+          margin-bottom:30px;
+          border-top: 2px solid #D8CCA3;
+          border-bottom: 2px solid #D8CCA3;
+          grid-row: 2 / 3;
+          grid-column: 2 / 4;
+          }          
+  }  
+
+/*-------- Telefono ----------*/
+@media (max-width: 767px) {
+  body {
+    width: 60%;
+   }
+
+.cont-imagen{
+    max-width: 100%;
+    max-height:100% ;
+    display: flex;             /*Utilizada para centrar la imágen horizontalmente*/
+    justify-content: center;   /*Utilizada para centrar la imágen horizontalmente*/
+    align-items: center;
+    margin-top:160px;            /*Margen superior*/
+    margin-bottom:25px;         /*Margen inferior*/
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    }
+.imagen{
+      width: 120px;
+      height: 120px;        
+      border-radius: 50%;
+      margin: 10px auto;
+      border: solid #D8CCA3 4px;
+      }
+.nombre{
+      max-width: 100%;
+      max-height:100% ;
+      display: flex; 
+      justify-content: center;
+      margin-top:295px;
+      margin-bottom:5px;
+      grid-row: 1 / 2;
+      grid-column: 2 / 4;
+      font-family: 'Dancing Script', cursive;
+      font-size: small;
+      }
+.menu{
+  display: none;
+      
+      }          
+.contacto          
+      {
+      margin-top:20px;
+      margin-bottom:20px;
+      border-top: 2px solid #D8CCA3;
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      grid-row: 2 / 3;
+      grid-column: 1 / 5;
+      }
+.info-adicional
+      {
+      margin-top:90px;
+      margin-bottom:110px;
+      border-top: 2px solid #D8CCA3;
+      border-bottom: 2px solid #D8CCA3;
+      grid-row: 2 / 3;
+      grid-column: 1 / 5;
+      }          
+  }  
