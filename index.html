@@ -15,8 +15,8 @@
   <script src="https://kit.fontawesome.com/ea7fe956b2.js" crossorigin="anonymous"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
 
 </head>
 
@@ -26,36 +26,41 @@
   </div>  
   
   <div class="nombre">
-     <h1 onmouseleave="cambfondo()" id="fondo"><span id="Nombre"> </span></h1>
+     <h1  id="fondo"><span id="Nombre"> </span></h1>
   </div>
 
   <nav class="menu">
     <a href="https://www.w3schools.com/html/"> HTML5</a>
     <a href="https://www.w3schools.com/css/default.asp"> CSS3</a>
     <a href="https://www.w3schools.com/js/default.asp"> Java Script</a>
+    <a href="#" class="bt-extracto">Extracto</a>
+    <input  type="checkbox" class="toggle-switch" onclick="cambiarModo()"/>
   </nav>
-  
+    
   <section class="contacto"> 
         <ul > 
-           <i class="fa-sharp fa-solid fa-phone"></i> </i> <!--Celular: --><span id="celular"> </span>
+           <i class="fa-sharp fa-solid fa-phone"></i> </i><span id="celular"> </span>
            <p></p>
            <i class="fa-sharp fa-solid fa-envelope"></i> <span id="email"></span>
         </ul>
+        
   </section>
 
-  
-
   <aside class="info-adicional"><br> <p>Información adicional </p><br>
-    
       <li> <i class="fa-sharp fa-solid fa-user"> </i> Genero: <span id="genero"> </span></li>
-      <li> <i class="fa-sharp fa-solid fa-calendar-days"> </i> Fecha de nacimiento: <span id="nacimiento" onmouseover="edad()"></span></li>  
+      <li> <i class="fa-sharp fa-solid fa-calendar-days"> </i> Edad: <span id= "edad" ></span> años</li>  
       <li> <i class="fa-sharp fa-solid fa-location-dot"> </i> Localización: <span id="localizacion"></span></li>
-      
-</aside>
+  </aside>
+
+  <section class="modal ">
+      <div class="modal__container">
+        <h3 class="modal__title">Perfil profecional</h3>
+        <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur deleniti maxime.</p>
+        <a href="#" class="modal__close">Cerrar</a>
+      </div>
+  </section>
 
   <script type ="text/javascript" src="cv.js"></script>
-  
-</div>
 
 </body>
 </html>

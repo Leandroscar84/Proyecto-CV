@@ -32,25 +32,48 @@ function traer() {
         genero.innerHTML = `
         ${ data.results['0'].gender}
         `   
-        nacimiento.innerHTML = `
-        ${ data.results['0'].dob.date}
+        edad.innerHTML = `
+        ${ data.results['0'].dob.age}
         `
-     
         localizacion.innerHTML = `
         ${ data.results['0'].location.city}, ${ data.results['0'].location.state}, ${ data.results['0'].location.country}
         `
-        /*nacionalidad.innerHTML = `
-        ${ data.results['0'].nat}
-        `     
-        edad.innerHTML = `
-        ${ data.results['0'].dob.age}
-        `      */
     })
 } 
 
-
-let cambio = document.getElementById("fondo");
-function cambfondo() {
-    cambio.style.background = '#5e4d14' ;
+var elementos = document.getElementsByClassName("nombre");
+for(var i = 0; i < elementos.length; i++)
+    {
+    elementos[i].addEventListener("mouseover", porencima);
+    elementos[i].addEventListener("mouseout", alquitar);
     }
+    function porencima() 
+              {
+              this.style.color = "#EDDFB3";
+              }
+    function alquitar() 
+              {
+              this.style.color = "#FF8000";
+              }
 
+function cambiarModo() 
+    { 
+    var cuerpoweb = document.body; 
+    cuerpoweb.classList.toggle("oscuro"); 
+    } 
+
+const openModal = document.querySelector('.bt-extracto');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.modal__close');
+
+openModal.addEventListener('click', (e)=>
+    {
+    e.preventDefault();
+    modal.classList.add('modal--show');
+    });
+
+closeModal.addEventListener('click', (e)=>
+    {
+    e.preventDefault();
+    modal.classList.remove('modal--show');
+    }); 
